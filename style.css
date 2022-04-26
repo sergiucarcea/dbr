@@ -1,0 +1,36 @@
+html {
+    background: rgb(45, 6, 54) url(Background.jpg) center center no-repeat; background-size: cover;  color: white; } 
+    
+
+body {
+    display: block; 
+    margin: 0%;
+    place-items: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+@media (min-width: 500px) { body {display: grid; } }
+.Container {
+    
+    margin: 2vh;
+    background-color:transparent;
+    font-size : clamp(1rem, 2vw, 3rem);
+    line-height: 1.5em;
+}
+@media (min-width: 50px) { .Container {margin: 2vh; border-radius: 2rem; padding: 1rem; } }
+
+    header {  }
+        .Avatar { display: block; float: left; width: 112px; height: auto; margin: 0 1em 1em 0; border-radius: 50%; }
+        @media (min-width: 450px) { .Avatar {float: left; } }
+        .TitlulPaginii {display: block; font-size: clamp(2rem, 6vw, 4rem); line-height: 1em }
+    
+    main {clear: both; }
+        .ListaLinkuri { display: block; margin: 0; padding: 0; border-top: 1px solid #fff; }
+            .ListaItem { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff; }
+                .ListaLink { display: block; padding: 0,5em; color: #fff; text-decoration: none; }
+                .ListaLink:hover { background: rgb(128, 186, 228); color: black; opacity: 0.4;}
+                .ListaTitlu, .ListaText { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em; }
+                .ListaText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        .ListaLinkuri { display: block; }
